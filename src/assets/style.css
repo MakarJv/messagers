@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #dcdc99;
+    --secondary-color: #EAEAB4;
+    --main-font: 'Montserrat', sans-serif;
+    --text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #222, #555);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: var(--secondary-color);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.messages {
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+/* display: inline-block will help us to avoid the text from  */
+.message-item span {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.submit {
+    padding: 8px;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: white;
+    background-color: #3636C9;
+    border-style: none;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 300px;
+    }
+    input {
+        width: 220px;
+    }
+}
